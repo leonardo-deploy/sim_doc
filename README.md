@@ -2,7 +2,7 @@
 
 Uma ferramenta web simples e privada para transformar arquivos PDF e fotos de documentos em arquivos Word editáveis.
 
-O Converge PDF foi projetado para funcionar no **Firebase Hosting no plano Spark**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
+O Converge PDF foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
 
 ## Recursos
 
@@ -16,7 +16,7 @@ O Converge PDF foi projetado para funcionar no **Firebase Hosting no plano Spark
 - Layout responsivo para computador e celular
 - Áreas laterais e horizontal preparadas para Google AdSense
 - Páginas de privacidade, termos, sobre e contato
-- SEO básico, manifesto PWA e configuração do Firebase Hosting
+- SEO básico, manifesto PWA e configuração do Cloudflare Pages
 
 ## Tecnologias
 
@@ -25,7 +25,8 @@ O Converge PDF foi projetado para funcionar no **Firebase Hosting no plano Spark
 - PDF.js para leitura e renderização de PDFs
 - Tesseract.js para reconhecimento óptico de caracteres
 - docx para geração dos arquivos Word
-- Firebase Hosting para publicação estática
+- Cloudflare Pages para publicação estática na rede global
+- Wrangler para validação, prévia e deploy por linha de comando
 
 ## Executar localmente
 
@@ -64,22 +65,34 @@ Enquanto esses valores não forem configurados, o layout exibe marcadores discre
 
 Antes do lançamento, substitua o conteúdo de `public/ads.txt` pela linha fornecida no painel do AdSense.
 
-## Publicar no Firebase Spark
+## Publicar no Cloudflare Pages
 
-1. Crie um projeto no [Firebase Console](https://console.firebase.google.com/).
-2. Instale e autentique o Firebase CLI.
-3. Associe este diretório ao projeto.
-4. Gere e publique a versão estática.
+A opção recomendada é conectar o próprio repositório ao Cloudflare para ter deploy automático:
+
+1. Acesse **Workers & Pages** no painel do Cloudflare.
+2. Selecione **Create application → Pages → Import an existing Git repository**.
+3. Autorize o GitHub e escolha `leonardo-deploy/converge-pdf`.
+4. Use a branch de produção `main`.
+5. Configure o comando de build como `npm run build`.
+6. Configure o diretório de saída como `dist`.
+7. Salve e inicie o primeiro deploy.
+
+Cada atualização enviada para `main` será compilada e publicada automaticamente. Pull requests também recebem URLs de prévia.
+
+Para testar a versão com o ambiente local do Cloudflare:
 
 ```bash
-npm install -g firebase-tools
-firebase login
-firebase use --add
-npm run build
-firebase deploy --only hosting
+npm run preview:cloudflare
 ```
 
-O projeto não usa Cloud Functions, Cloud Run, Firestore ou Storage. Essa decisão mantém a operação compatível com o plano Spark e evita que documentos sejam enviados ao backend.
+Depois que o projeto `converge-pdf` existir na conta, também é possível publicar manualmente:
+
+```bash
+npx wrangler login
+npm run deploy:cloudflare
+```
+
+O projeto não usa Pages Functions, Workers, D1, KV ou R2. Assim, todas as visitas permanecem como requisições estáticas gratuitas e os documentos continuam sendo processados somente no navegador.
 
 ## Preparação para o domínio
 
@@ -87,7 +100,7 @@ Quando o domínio definitivo for escolhido:
 
 1. Substitua `SEU_DOMINIO` em `public/robots.txt` e `public/sitemap.xml`.
 2. Configure `VITE_CONTACT_EMAIL`.
-3. Cadastre o domínio no Firebase Hosting.
+3. Cadastre o domínio em **Workers & Pages → Custom domains**.
 4. Confirme o domínio no Google Search Console e no AdSense.
 5. Insira os códigos reais das unidades de anúncio e do `ads.txt`.
 
@@ -108,7 +121,8 @@ src/
 ├── pages/           # Início e páginas institucionais
 └── test/            # Configuração dos testes
 public/              # SEO, manifesto, favicon e ads.txt
-firebase.json        # Configuração do Firebase Hosting
+wrangler.jsonc       # Configuração do Cloudflare Pages
+public/_headers      # Segurança e cache dos arquivos estáticos
 ```
 
 ## Privacidade
