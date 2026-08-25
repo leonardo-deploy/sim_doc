@@ -2,6 +2,8 @@
 
 Uma ferramenta web simples e privada para transformar arquivos PDF e fotos de documentos em arquivos Word editáveis.
 
+Site publicado: <https://converge-pdf.pages.dev/>
+
 O Converge PDF foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
 
 ## Recursos
@@ -96,9 +98,9 @@ O projeto não usa Pages Functions, Workers, D1, KV ou R2. Assim, todas as visit
 
 ## Preparação para o domínio
 
-Quando o domínio definitivo for escolhido:
+O domínio atual do projeto é `https://converge-pdf.pages.dev`. Se um domínio próprio for conectado no futuro:
 
-1. Substitua `SEU_DOMINIO` em `public/robots.txt` e `public/sitemap.xml`.
+1. Substitua o domínio do Pages em `public/robots.txt` e `public/sitemap.xml`.
 2. Configure `VITE_CONTACT_EMAIL`.
 3. Cadastre o domínio em **Workers & Pages → Custom domains**.
 4. Confirme o domínio no Google Search Console e no AdSense.
