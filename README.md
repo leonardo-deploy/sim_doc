@@ -1,10 +1,10 @@
-# Texto Doc
+# Sim Doc
 
 Uma ferramenta web simples e privada para transformar arquivos PDF e fotos de documentos em arquivos Word editáveis.
 
-Site publicado: <https://texto-doc.pages.dev/>
+Site publicado: <https://sim-doc.pages.dev/>
 
-O Texto Doc foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
+O Sim Doc foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
 
 ## Recursos
 
@@ -70,7 +70,7 @@ Para testar a versão com o ambiente local do Cloudflare:
 npm run preview:cloudflare
 ```
 
-Depois que o projeto `texto-doc` existir na conta, também é possível publicar manualmente:
+Depois que o projeto `sim-doc` existir na conta, também é possível publicar manualmente:
 
 ```bash
 npx wrangler login
@@ -81,7 +81,7 @@ O projeto não usa Pages Functions, Workers, D1, KV ou R2. Assim, todas as visit
 
 ## Preparação para o domínio
 
-O domínio atual do projeto é `https://texto-doc.pages.dev`. Se um domínio próprio for conectado no futuro:
+O domínio atual do projeto é `https://sim-doc.pages.dev`. Se um domínio próprio for conectado no futuro:
 
 1. Substitua o domínio do Pages em `public/robots.txt` e `public/sitemap.xml`.
 2. Configure `VITE_CONTACT_EMAIL`.
