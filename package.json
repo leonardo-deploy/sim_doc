@@ -1,5 +1,5 @@
 {
-  "name": "texto-doc",
+  "name": "sim-doc",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "preview:cloudflare": "npm run build && wrangler pages dev dist",
-    "deploy:cloudflare": "npm run build && wrangler pages deploy dist --project-name texto-doc",
+    "deploy:cloudflare": "npm run build && wrangler pages deploy dist --project-name sim-doc",
     "lint": "tsc -b --pretty false",
     "test": "vitest run",
     "test:watch": "vitest"
