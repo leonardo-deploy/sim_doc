@@ -28,11 +28,11 @@ export function AboutPage() {
     <ContentPage
       eyebrow="SOBRE O PROJETO"
       title="Tecnologia útil, simples e respeitosa"
-      introduction="O Texto Doc nasceu para tornar documentos mais fáceis de editar sem transformar privacidade em uma complicação."
+      introduction="O Sim Doc nasceu para tornar documentos mais fáceis de editar sem transformar privacidade em uma complicação."
     >
       <h2>O que fazemos</h2>
       <p>
-        O Texto Doc transforma textos de arquivos PDF e fotos de documentos em um arquivo
+        O Sim Doc transforma textos de arquivos PDF e fotos de documentos em um arquivo
         Word editável. A ferramenta combina leitura de PDF e reconhecimento óptico de caracteres
         (OCR) em uma experiência direta, acessível no computador ou no celular.
       </p>
@@ -40,7 +40,7 @@ export function AboutPage() {
       <p>
         Documentos podem conter informações pessoais, profissionais ou financeiras. Por isso,
         projetamos a conversão para acontecer localmente no navegador sempre que você usa a
-        ferramenta. O arquivo não precisa ser enviado para uma infraestrutura do Texto Doc.
+        ferramenta. O arquivo não precisa ser enviado para uma infraestrutura do Sim Doc.
       </p>
       <div className="prose-highlight">
         <ShieldCheck size={28} />
@@ -61,13 +61,13 @@ export function PrivacyPage() {
     <ContentPage
       eyebrow="TRANSPARÊNCIA"
       title="Política de privacidade"
-      introduction="Esta política explica de forma clara o que acontece com seus documentos e dados ao usar o Texto Doc."
+      introduction="Esta política explica de forma clara o que acontece com seus documentos e dados ao usar o Sim Doc."
     >
       <p className="prose-updated">Última atualização: 25 de agosto de 2026.</p>
       <h2>1. Processamento dos documentos</h2>
       <p>
         Os arquivos escolhidos para conversão são processados localmente pelo navegador. O
-        Texto Doc não recebe, armazena ou mantém cópias do conteúdo desses arquivos em seus
+        Sim Doc não recebe, armazena ou mantém cópias do conteúdo desses arquivos em seus
         servidores. Ao fechar ou atualizar a página, o resultado que não foi salvo por você é
         descartado pelo navegador.
       </p>
@@ -97,12 +97,12 @@ export function TermsPage() {
     <ContentPage
       eyebrow="USO RESPONSÁVEL"
       title="Termos de uso"
-      introduction="Ao utilizar o Texto Doc, você concorda com as condições abaixo."
+      introduction="Ao utilizar o Sim Doc, você concorda com as condições abaixo."
     >
       <p className="prose-updated">Última atualização: 25 de agosto de 2026.</p>
       <h2>1. Finalidade do serviço</h2>
       <p>
-        O Texto Doc oferece ferramentas automatizadas para extrair texto de PDFs e imagens e
+        O Sim Doc oferece ferramentas automatizadas para extrair texto de PDFs e imagens e
         gerar documentos editáveis. O serviço não substitui uma revisão humana.
       </p>
       <h2>2. Precisão da conversão</h2>
@@ -126,7 +126,7 @@ export function TermsPage() {
       <h2>5. Propriedade intelectual</h2>
       <p>
         Você mantém os direitos sobre seus documentos e sobre o texto extraído. A marca, o design
-        e o código próprio do Texto Doc permanecem protegidos por seus respectivos direitos.
+        e o código próprio do Sim Doc permanecem protegidos por seus respectivos direitos.
       </p>
       <h2>6. Alterações</h2>
       <p>
@@ -143,7 +143,7 @@ export function ContactPage() {
     <ContentPage
       eyebrow="FALE CONOSCO"
       title="Contato"
-      introduction="Dúvidas, sugestões ou relatos de problema ajudam o Texto Doc a melhorar."
+      introduction="Dúvidas, sugestões ou relatos de problema ajudam o Sim Doc a melhorar."
     >
       <h2>Como entrar em contato</h2>
       <p>
