@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { CookieConsent } from "./components/CookieConsent";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { HomePage } from "./pages/HomePage";
@@ -48,7 +47,6 @@ export default function App() {
         <Route path="*" element={<HomePage />} />
       </Routes>
       <Footer />
-      <CookieConsent />
     </>
   );
 }
