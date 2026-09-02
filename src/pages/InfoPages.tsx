@@ -77,26 +77,13 @@ export function PrivacyPage() {
         site, como endereço IP, tipo de navegador, data e horário do acesso. Esses registros são
         administrados pelos provedores de infraestrutura conforme suas próprias políticas.
       </p>
-      <h2>3. Publicidade e cookies</h2>
-      <p>
-        Quando a publicidade estiver habilitada, parceiros como o Google AdSense poderão usar
-        cookies ou tecnologias semelhantes para exibir e medir anúncios. O carregamento desses
-        anúncios depende da preferência informada no aviso de privacidade. Você pode recusar e
-        continuar usando o conversor.
-      </p>
-      <h2>4. Armazenamento local</h2>
-      <p>
-        O site pode guardar no próprio navegador apenas a sua preferência sobre anúncios. Essa
-        informação não contém o conteúdo dos documentos convertidos e pode ser apagada nas
-        configurações do navegador.
-      </p>
-      <h2>5. Seus direitos</h2>
+      <h2>3. Seus direitos</h2>
       <p>
         Você pode solicitar informações, correção ou exclusão de eventuais dados pessoais sob
         nossa responsabilidade, de acordo com a Lei Geral de Proteção de Dados (LGPD). Consulte a
         página de contato para falar conosco.
       </p>
-      <h2>6. Alterações desta política</h2>
+      <h2>4. Alterações desta política</h2>
       <p>
         Esta política poderá ser atualizada para refletir mudanças no serviço ou na legislação. A
         data da versão mais recente será sempre informada nesta página.
