@@ -230,9 +230,9 @@ export async function createWordBlob(sourceName: string, text: string) {
     );
 
   const document = new Document({
-    creator: "Texto Doc",
+    creator: "Sim Doc",
     title: sourceName,
-    description: "Documento convertido pelo Texto Doc",
+    description: "Documento convertido pelo Sim Doc",
     sections: [
       {
         properties: {
