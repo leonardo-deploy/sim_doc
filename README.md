@@ -1,10 +1,10 @@
-# Converge PDF
+# Texto Doc
 
 Uma ferramenta web simples e privada para transformar arquivos PDF e fotos de documentos em arquivos Word editáveis.
 
-Site publicado: <https://converge-pdf.pages.dev/>
+Site publicado: <https://texto-doc.pages.dev/>
 
-O Converge PDF foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
+O Texto Doc foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
 
 ## Recursos
 
@@ -73,7 +73,7 @@ A opção recomendada é conectar o próprio repositório ao Cloudflare para ter
 
 1. Acesse **Workers & Pages** no painel do Cloudflare.
 2. Selecione **Create application → Pages → Import an existing Git repository**.
-3. Autorize o GitHub e escolha `leonardo-deploy/converge-pdf`.
+3. Autorize o GitHub e escolha `leonardo-deploy/texto_doc`.
 4. Use a branch de produção `main`.
 5. Configure o comando de build como `npm run build`.
 6. Configure o diretório de saída como `dist`.
@@ -87,7 +87,7 @@ Para testar a versão com o ambiente local do Cloudflare:
 npm run preview:cloudflare
 ```
 
-Depois que o projeto `converge-pdf` existir na conta, também é possível publicar manualmente:
+Depois que o projeto `texto-doc` existir na conta, também é possível publicar manualmente:
 
 ```bash
 npx wrangler login
@@ -98,7 +98,7 @@ O projeto não usa Pages Functions, Workers, D1, KV ou R2. Assim, todas as visit
 
 ## Preparação para o domínio
 
-O domínio atual do projeto é `https://converge-pdf.pages.dev`. Se um domínio próprio for conectado no futuro:
+O domínio atual do projeto é `https://texto-doc.pages.dev`. Se um domínio próprio for conectado no futuro:
 
 1. Substitua o domínio do Pages em `public/robots.txt` e `public/sitemap.xml`.
 2. Configure `VITE_CONTACT_EMAIL`.
