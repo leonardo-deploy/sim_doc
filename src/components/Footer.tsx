@@ -14,7 +14,7 @@ export function Footer() {
           </p>
         </div>
         <div>
-          <h2>Texto Doc</h2>
+          <h2>Sim Doc</h2>
           <Link to="/sobre">Sobre o projeto</Link>
           <Link to="/#como-funciona">Como funciona</Link>
           <a href="https://github.com/leonardo-deploy/texto_doc" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
       <div className="page-shell footer-bottom">
-        <span>© {new Date().getFullYear()} Texto Doc.</span>
+        <span>© {new Date().getFullYear()} Sim Doc.</span>
         <span className="made-with-care">
           Feito com <Heart size={14} aria-label="cuidado" /> no Brasil
         </span>
