@@ -11,7 +11,7 @@ export function Logo() {
         </svg>
       </span>
       <span>
-        Converge <strong>PDF</strong>
+        Texto <strong>Doc</strong>
       </span>
     </Link>
   );
