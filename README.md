@@ -16,7 +16,6 @@ O Texto Doc foi projetado para funcionar no **Cloudflare Pages no plano gratuito
 - Até 40 páginas por PDF ou 10 imagens por conversão
 - Processamento local e sem cadastro
 - Layout responsivo para computador e celular
-- Áreas laterais e horizontal preparadas para Google AdSense
 - Páginas de privacidade, termos, sobre e contato
 - SEO básico, manifesto PWA e configuração do Cloudflare Pages
 
@@ -50,22 +49,6 @@ npm run build
 ```
 
 O resultado de produção é criado na pasta `dist/`.
-
-## Configurar publicidade
-
-Copie `.env.example` para `.env.local` e informe os dados fornecidos pelo Google AdSense:
-
-```env
-VITE_ADSENSE_CLIENT=ca-pub-0000000000000000
-VITE_ADSENSE_LEFT_SLOT=0000000000
-VITE_ADSENSE_RIGHT_SLOT=0000000000
-VITE_ADSENSE_INLINE_SLOT=0000000000
-VITE_CONTACT_EMAIL=contato@seu-dominio.com
-```
-
-Enquanto esses valores não forem configurados, o layout exibe marcadores discretos indicando as posições reservadas. O script do AdSense só é carregado depois que o visitante aceita a publicidade no aviso de privacidade.
-
-Antes do lançamento, substitua o conteúdo de `public/ads.txt` pela linha fornecida no painel do AdSense.
 
 ## Publicar no Cloudflare Pages
 
@@ -103,8 +86,7 @@ O domínio atual do projeto é `https://texto-doc.pages.dev`. Se um domínio pr�
 1. Substitua o domínio do Pages em `public/robots.txt` e `public/sitemap.xml`.
 2. Configure `VITE_CONTACT_EMAIL`.
 3. Cadastre o domínio em **Workers & Pages → Custom domains**.
-4. Confirme o domínio no Google Search Console e no AdSense.
-5. Insira os códigos reais das unidades de anúncio e do `ads.txt`.
+4. Confirme o domínio no Google Search Console.
 
 ## Limitações conhecidas
 
@@ -118,7 +100,7 @@ O domínio atual do projeto é `https://texto-doc.pages.dev`. Se um domínio pr�
 
 ```text
 src/
-├── components/      # Navegação, conversor, anúncios e consentimento
+├── components/      # Navegação e conversor
 ├── lib/             # Validação, PDF, OCR e geração de DOCX
 ├── pages/           # Início e páginas institucionais
 └── test/            # Configuração dos testes
@@ -129,4 +111,4 @@ public/_headers      # Segurança e cache dos arquivos estáticos
 
 ## Privacidade
 
-O conteúdo selecionado pelo usuário permanece no dispositivo durante a conversão. Para detalhes sobre hospedagem, publicidade e preferências locais, consulte a Política de Privacidade dentro do próprio site.
+O conteúdo selecionado pelo usuário permanece no dispositivo durante a conversão. Para detalhes sobre hospedagem e privacidade, consulte a Política de Privacidade dentro do próprio site.
