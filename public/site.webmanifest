@@ -1,6 +1,6 @@
 {
-  "name": "Converge PDF",
-  "short_name": "Converge PDF",
+  "name": "Texto Doc",
+  "short_name": "Texto Doc",
   "description": "Converta PDFs e fotos de documentos em arquivos Word editáveis.",
   "start_url": "/",
   "display": "standalone",
