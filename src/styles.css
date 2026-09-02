@@ -982,7 +982,6 @@ p {
 
 
 
-.ad-slot-inline 
 .converter-assurances {
   display: flex;
   justify-content: center;
@@ -1813,8 +1812,7 @@ p {
   }
 
   
-  .ad-slot-inline 
-  .privacy-grid {
+    .privacy-grid {
     gap: 36px;
   }
 
