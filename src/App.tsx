@@ -11,11 +11,11 @@ import {
 } from "./pages/InfoPages";
 
 const titles: Record<string, string> = {
-  "/": "Texto Doc — PDF e foto para Word",
-  "/sobre": "Sobre — Texto Doc",
-  "/privacidade": "Política de privacidade — Texto Doc",
-  "/termos": "Termos de uso — Texto Doc",
-  "/contato": "Contato — Texto Doc",
+  "/": "Sim Doc — PDF e foto para Word",
+  "/sobre": "Sobre — Sim Doc",
+  "/privacidade": "Política de privacidade — Sim Doc",
+  "/termos": "Termos de uso — Sim Doc",
+  "/contato": "Contato — Sim Doc",
 };
 
 function NavigationEffects() {
