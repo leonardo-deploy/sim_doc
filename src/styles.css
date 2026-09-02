@@ -564,10 +564,9 @@ p {
 
 .tool-layout {
   display: grid;
-  grid-template-columns: 174px minmax(580px, 760px) 174px;
+  grid-template-columns: minmax(0, 760px);
   justify-content: center;
   align-items: start;
-  gap: 24px;
 }
 
 .converter-card {
@@ -978,46 +977,12 @@ p {
   to { transform: rotate(360deg); }
 }
 
-.ad-slot {
-  min-width: 0;
-  color: #9aa4b2;
-  text-align: center;
-}
 
-.ad-label {
-  display: block;
-  margin-bottom: 7px;
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
 
-.ad-placeholder {
-  display: flex;
-  min-height: 600px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-  border: 1px dashed #d9dfe7;
-  border-radius: 10px;
-  background: #fafbfd;
-  color: #a0a9b5;
-  font-size: 10px;
-}
 
-.ad-placeholder small {
-  font-size: 9px;
-}
 
-.ad-slot-inline {
-  margin-block: 35px 8px;
-}
 
-.ad-slot-inline .ad-placeholder {
-  min-height: 110px;
-}
-
+.ad-slot-inline 
 .converter-assurances {
   display: flex;
   justify-content: center;
@@ -1493,65 +1458,12 @@ p {
   fill: var(--orange-500);
 }
 
-.cookie-banner {
-  position: fixed;
-  z-index: 80;
-  right: 22px;
-  bottom: 22px;
-  display: grid;
-  width: min(610px, calc(100% - 44px));
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 14px;
-  padding: 18px;
-  border: 1px solid #d7dee7;
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 22px 55px rgba(5, 18, 35, 0.22);
-}
 
-.cookie-icon {
-  display: grid;
-  width: 41px;
-  height: 41px;
-  place-items: center;
-  border-radius: 11px;
-  background: var(--orange-100);
-  color: var(--orange-600);
-}
 
-.cookie-banner strong {
-  color: var(--navy-900);
-  font-size: 13px;
-}
 
-.cookie-banner p {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
-}
 
-.cookie-banner p a {
-  color: var(--orange-600);
-  text-decoration: underline;
-}
 
-.cookie-actions {
-  display: flex;
-  gap: 7px;
-}
 
-.cookie-close {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  display: none;
-  padding: 6px;
-  border: 0;
-  background: transparent;
-  color: #7f8a9b;
-}
 
 .content-page {
   min-height: 70vh;
@@ -1692,10 +1604,6 @@ p {
     grid-template-columns: minmax(0, 760px);
   }
 
-  .ad-slot-left,
-  .ad-slot-right {
-    display: none;
-  }
 }
 
 @media (max-width: 960px) {
@@ -1904,14 +1812,8 @@ p {
     transform: none;
   }
 
-  .ad-slot-inline {
-    margin-block: 25px 0;
-  }
-
-  .ad-slot-inline .ad-placeholder {
-    min-height: 95px;
-  }
-
+  
+  .ad-slot-inline 
   .privacy-grid {
     gap: 36px;
   }
@@ -1955,19 +1857,8 @@ p {
     gap: 7px;
   }
 
-  .cookie-banner {
-    right: 14px;
-    bottom: 14px;
-    width: calc(100% - 28px);
-    grid-template-columns: auto 1fr;
-    padding: 17px;
-  }
-
-  .cookie-actions {
-    grid-column: 1 / -1;
-    justify-content: flex-end;
-  }
-
+  
+  
   .content-hero {
     padding-block: 58px 100px;
   }
