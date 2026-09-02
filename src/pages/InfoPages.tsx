@@ -28,11 +28,11 @@ export function AboutPage() {
     <ContentPage
       eyebrow="SOBRE O PROJETO"
       title="Tecnologia útil, simples e respeitosa"
-      introduction="O Converge PDF nasceu para tornar documentos mais fáceis de editar sem transformar privacidade em uma complicação."
+      introduction="O Texto Doc nasceu para tornar documentos mais fáceis de editar sem transformar privacidade em uma complicação."
     >
       <h2>O que fazemos</h2>
       <p>
-        O Converge PDF transforma textos de arquivos PDF e fotos de documentos em um arquivo
+        O Texto Doc transforma textos de arquivos PDF e fotos de documentos em um arquivo
         Word editável. A ferramenta combina leitura de PDF e reconhecimento óptico de caracteres
         (OCR) em uma experiência direta, acessível no computador ou no celular.
       </p>
@@ -40,7 +40,7 @@ export function AboutPage() {
       <p>
         Documentos podem conter informações pessoais, profissionais ou financeiras. Por isso,
         projetamos a conversão para acontecer localmente no navegador sempre que você usa a
-        ferramenta. O arquivo não precisa ser enviado para uma infraestrutura do Converge PDF.
+        ferramenta. O arquivo não precisa ser enviado para uma infraestrutura do Texto Doc.
       </p>
       <div className="prose-highlight">
         <ShieldCheck size={28} />
@@ -61,13 +61,13 @@ export function PrivacyPage() {
     <ContentPage
       eyebrow="TRANSPARÊNCIA"
       title="Política de privacidade"
-      introduction="Esta política explica de forma clara o que acontece com seus documentos e dados ao usar o Converge PDF."
+      introduction="Esta política explica de forma clara o que acontece com seus documentos e dados ao usar o Texto Doc."
     >
       <p className="prose-updated">Última atualização: 25 de agosto de 2026.</p>
       <h2>1. Processamento dos documentos</h2>
       <p>
         Os arquivos escolhidos para conversão são processados localmente pelo navegador. O
-        Converge PDF não recebe, armazena ou mantém cópias do conteúdo desses arquivos em seus
+        Texto Doc não recebe, armazena ou mantém cópias do conteúdo desses arquivos em seus
         servidores. Ao fechar ou atualizar a página, o resultado que não foi salvo por você é
         descartado pelo navegador.
       </p>
@@ -77,26 +77,13 @@ export function PrivacyPage() {
         site, como endereço IP, tipo de navegador, data e horário do acesso. Esses registros são
         administrados pelos provedores de infraestrutura conforme suas próprias políticas.
       </p>
-      <h2>3. Publicidade e cookies</h2>
-      <p>
-        Quando a publicidade estiver habilitada, parceiros como o Google AdSense poderão usar
-        cookies ou tecnologias semelhantes para exibir e medir anúncios. O carregamento desses
-        anúncios depende da preferência informada no aviso de privacidade. Você pode recusar e
-        continuar usando o conversor.
-      </p>
-      <h2>4. Armazenamento local</h2>
-      <p>
-        O site pode guardar no próprio navegador apenas a sua preferência sobre anúncios. Essa
-        informação não contém o conteúdo dos documentos convertidos e pode ser apagada nas
-        configurações do navegador.
-      </p>
-      <h2>5. Seus direitos</h2>
+      <h2>3. Seus direitos</h2>
       <p>
         Você pode solicitar informações, correção ou exclusão de eventuais dados pessoais sob
         nossa responsabilidade, de acordo com a Lei Geral de Proteção de Dados (LGPD). Consulte a
         página de contato para falar conosco.
       </p>
-      <h2>6. Alterações desta política</h2>
+      <h2>4. Alterações desta política</h2>
       <p>
         Esta política poderá ser atualizada para refletir mudanças no serviço ou na legislação. A
         data da versão mais recente será sempre informada nesta página.
@@ -110,12 +97,12 @@ export function TermsPage() {
     <ContentPage
       eyebrow="USO RESPONSÁVEL"
       title="Termos de uso"
-      introduction="Ao utilizar o Converge PDF, você concorda com as condições abaixo."
+      introduction="Ao utilizar o Texto Doc, você concorda com as condições abaixo."
     >
       <p className="prose-updated">Última atualização: 25 de agosto de 2026.</p>
       <h2>1. Finalidade do serviço</h2>
       <p>
-        O Converge PDF oferece ferramentas automatizadas para extrair texto de PDFs e imagens e
+        O Texto Doc oferece ferramentas automatizadas para extrair texto de PDFs e imagens e
         gerar documentos editáveis. O serviço não substitui uma revisão humana.
       </p>
       <h2>2. Precisão da conversão</h2>
@@ -139,7 +126,7 @@ export function TermsPage() {
       <h2>5. Propriedade intelectual</h2>
       <p>
         Você mantém os direitos sobre seus documentos e sobre o texto extraído. A marca, o design
-        e o código próprio do Converge PDF permanecem protegidos por seus respectivos direitos.
+        e o código próprio do Texto Doc permanecem protegidos por seus respectivos direitos.
       </p>
       <h2>6. Alterações</h2>
       <p>
@@ -156,7 +143,7 @@ export function ContactPage() {
     <ContentPage
       eyebrow="FALE CONOSCO"
       title="Contato"
-      introduction="Dúvidas, sugestões ou relatos de problema ajudam o Converge PDF a melhorar."
+      introduction="Dúvidas, sugestões ou relatos de problema ajudam o Texto Doc a melhorar."
     >
       <h2>Como entrar em contato</h2>
       <p>
@@ -170,7 +157,7 @@ export function ContactPage() {
             <Mail size={24} /><span><strong>E-mail</strong><small>{contactEmail}</small></span>
           </a>
         )}
-        <a href="https://github.com/leonardo-deploy/converge-pdf/issues" target="_blank" rel="noreferrer">
+        <a href="https://github.com/leonardo-deploy/texto_doc/issues" target="_blank" rel="noreferrer">
           <Code2 size={24} /><span><strong>Relatar problema no GitHub</strong><small>Abra uma issue pública no repositório</small></span>
         </a>
       </div>

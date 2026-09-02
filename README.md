@@ -1,10 +1,10 @@
-# Converge PDF
+# Texto Doc
 
 Uma ferramenta web simples e privada para transformar arquivos PDF e fotos de documentos em arquivos Word editáveis.
 
-Site publicado: <https://converge-pdf.pages.dev/>
+Site publicado: <https://texto-doc.pages.dev/>
 
-O Converge PDF foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
+O Texto Doc foi projetado para funcionar no **Cloudflare Pages no plano gratuito**. A leitura do documento, o OCR e a criação do `.docx` acontecem no navegador do usuário, sem backend e sem upload do conteúdo para servidores do projeto.
 
 ## Recursos
 
@@ -16,7 +16,6 @@ O Converge PDF foi projetado para funcionar no **Cloudflare Pages no plano gratu
 - Até 40 páginas por PDF ou 10 imagens por conversão
 - Processamento local e sem cadastro
 - Layout responsivo para computador e celular
-- Áreas laterais e horizontal preparadas para Google AdSense
 - Páginas de privacidade, termos, sobre e contato
 - SEO básico, manifesto PWA e configuração do Cloudflare Pages
 
@@ -51,29 +50,13 @@ npm run build
 
 O resultado de produção é criado na pasta `dist/`.
 
-## Configurar publicidade
-
-Copie `.env.example` para `.env.local` e informe os dados fornecidos pelo Google AdSense:
-
-```env
-VITE_ADSENSE_CLIENT=ca-pub-0000000000000000
-VITE_ADSENSE_LEFT_SLOT=0000000000
-VITE_ADSENSE_RIGHT_SLOT=0000000000
-VITE_ADSENSE_INLINE_SLOT=0000000000
-VITE_CONTACT_EMAIL=contato@seu-dominio.com
-```
-
-Enquanto esses valores não forem configurados, o layout exibe marcadores discretos indicando as posições reservadas. O script do AdSense só é carregado depois que o visitante aceita a publicidade no aviso de privacidade.
-
-Antes do lançamento, substitua o conteúdo de `public/ads.txt` pela linha fornecida no painel do AdSense.
-
 ## Publicar no Cloudflare Pages
 
 A opção recomendada é conectar o próprio repositório ao Cloudflare para ter deploy automático:
 
 1. Acesse **Workers & Pages** no painel do Cloudflare.
 2. Selecione **Create application → Pages → Import an existing Git repository**.
-3. Autorize o GitHub e escolha `leonardo-deploy/converge-pdf`.
+3. Autorize o GitHub e escolha `leonardo-deploy/texto_doc`.
 4. Use a branch de produção `main`.
 5. Configure o comando de build como `npm run build`.
 6. Configure o diretório de saída como `dist`.
@@ -87,7 +70,7 @@ Para testar a versão com o ambiente local do Cloudflare:
 npm run preview:cloudflare
 ```
 
-Depois que o projeto `converge-pdf` existir na conta, também é possível publicar manualmente:
+Depois que o projeto `texto-doc` existir na conta, também é possível publicar manualmente:
 
 ```bash
 npx wrangler login
@@ -98,13 +81,12 @@ O projeto não usa Pages Functions, Workers, D1, KV ou R2. Assim, todas as visit
 
 ## Preparação para o domínio
 
-O domínio atual do projeto é `https://converge-pdf.pages.dev`. Se um domínio próprio for conectado no futuro:
+O domínio atual do projeto é `https://texto-doc.pages.dev`. Se um domínio próprio for conectado no futuro:
 
 1. Substitua o domínio do Pages em `public/robots.txt` e `public/sitemap.xml`.
 2. Configure `VITE_CONTACT_EMAIL`.
 3. Cadastre o domínio em **Workers & Pages → Custom domains**.
-4. Confirme o domínio no Google Search Console e no AdSense.
-5. Insira os códigos reais das unidades de anúncio e do `ads.txt`.
+4. Confirme o domínio no Google Search Console.
 
 ## Limitações conhecidas
 
@@ -118,7 +100,7 @@ O domínio atual do projeto é `https://converge-pdf.pages.dev`. Se um domínio 
 
 ```text
 src/
-├── components/      # Navegação, conversor, anúncios e consentimento
+├── components/      # Navegação e conversor
 ├── lib/             # Validação, PDF, OCR e geração de DOCX
 ├── pages/           # Início e páginas institucionais
 └── test/            # Configuração dos testes
@@ -129,4 +111,4 @@ public/_headers      # Segurança e cache dos arquivos estáticos
 
 ## Privacidade
 
-O conteúdo selecionado pelo usuário permanece no dispositivo durante a conversão. Para detalhes sobre hospedagem, publicidade e preferências locais, consulte a Política de Privacidade dentro do próprio site.
+O conteúdo selecionado pelo usuário permanece no dispositivo durante a conversão. Para detalhes sobre hospedagem e privacidade, consulte a Política de Privacidade dentro do próprio site.

@@ -230,9 +230,9 @@ export async function createWordBlob(sourceName: string, text: string) {
     );
 
   const document = new Document({
-    creator: "Converge PDF",
+    creator: "Texto Doc",
     title: sourceName,
-    description: "Documento convertido pelo Converge PDF",
+    description: "Documento convertido pelo Texto Doc",
     sections: [
       {
         properties: {

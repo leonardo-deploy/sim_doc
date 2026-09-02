@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { CookieConsent } from "./components/CookieConsent";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { HomePage } from "./pages/HomePage";
@@ -12,11 +11,11 @@ import {
 } from "./pages/InfoPages";
 
 const titles: Record<string, string> = {
-  "/": "Converge PDF — PDF e foto para Word",
-  "/sobre": "Sobre — Converge PDF",
-  "/privacidade": "Política de privacidade — Converge PDF",
-  "/termos": "Termos de uso — Converge PDF",
-  "/contato": "Contato — Converge PDF",
+  "/": "Texto Doc — PDF e foto para Word",
+  "/sobre": "Sobre — Texto Doc",
+  "/privacidade": "Política de privacidade — Texto Doc",
+  "/termos": "Termos de uso — Texto Doc",
+  "/contato": "Contato — Texto Doc",
 };
 
 function NavigationEffects() {
@@ -48,7 +47,6 @@ export default function App() {
         <Route path="*" element={<HomePage />} />
       </Routes>
       <Footer />
-      <CookieConsent />
     </>
   );
 }

@@ -13,14 +13,13 @@ import {
   UploadCloud,
   Zap,
 } from "lucide-react";
-import { AdSlot } from "../components/AdSlot";
 import { Converter } from "../components/Converter";
 
 const faqs = [
   {
     question: "Meus arquivos são enviados para algum servidor?",
     answer:
-      "Não. A leitura do PDF, o reconhecimento das fotos e a criação do Word acontecem no seu próprio navegador. O Converge PDF não armazena o conteúdo dos documentos.",
+      "Não. A leitura do PDF, o reconhecimento das fotos e a criação do Word acontecem no seu próprio navegador. O Texto Doc não armazena o conteúdo dos documentos.",
   },
   {
     question: "O resultado fica igual ao documento original?",
@@ -99,9 +98,7 @@ export function HomePage() {
           <p>Nenhum upload para nossos servidores. O arquivo permanece no seu dispositivo.</p>
         </div>
         <div className="tool-layout page-shell-wide">
-          <AdSlot placement="left" />
           <Converter />
-          <AdSlot placement="right" />
         </div>
         <div className="page-shell converter-assurances">
           <span><ShieldCheck size={18} /> Processamento local</span>
@@ -140,8 +137,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <div className="page-shell"><AdSlot placement="inline" /></div>
-
       <section id="seguranca" className="section privacy-section">
         <div className="page-shell privacy-grid">
           <div className="privacy-visual" aria-hidden="true">
@@ -155,11 +150,11 @@ export function HomePage() {
             <span className="section-kicker section-kicker-light">PRIVACIDADE DE VERDADE</span>
             <h2>Seu documento não precisa sair do seu dispositivo</h2>
             <p>
-              A tecnologia do Converge PDF roda diretamente no navegador. Isso reduz riscos,
+              A tecnologia do Texto Doc roda diretamente no navegador. Isso reduz riscos,
               elimina filas de processamento e permite usar a ferramenta sem criar uma conta.
             </p>
             <ul>
-              <li><Check size={18} /> O conteúdo não é armazenado pelo Converge PDF</li>
+              <li><Check size={18} /> O conteúdo não é armazenado pelo Texto Doc</li>
               <li><Check size={18} /> Nenhum cadastro é necessário para converter</li>
               <li><Check size={18} /> Você decide quando apagar ou salvar o resultado</li>
             </ul>

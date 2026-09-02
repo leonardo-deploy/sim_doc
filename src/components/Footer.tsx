@@ -14,10 +14,10 @@ export function Footer() {
           </p>
         </div>
         <div>
-          <h2>Converge PDF</h2>
+          <h2>Texto Doc</h2>
           <Link to="/sobre">Sobre o projeto</Link>
           <Link to="/#como-funciona">Como funciona</Link>
-          <a href="https://github.com/leonardo-deploy/converge-pdf" target="_blank" rel="noreferrer">
+          <a href="https://github.com/leonardo-deploy/texto_doc" target="_blank" rel="noreferrer">
             <Code2 size={15} /> GitHub
           </a>
         </div>
@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
       <div className="page-shell footer-bottom">
-        <span>© {new Date().getFullYear()} Converge PDF.</span>
+        <span>© {new Date().getFullYear()} Texto Doc.</span>
         <span className="made-with-care">
           Feito com <Heart size={14} aria-label="cuidado" /> no Brasil
         </span>
