@@ -13,7 +13,6 @@ import {
   UploadCloud,
   Zap,
 } from "lucide-react";
-import { AdSlot } from "../components/AdSlot";
 import { Converter } from "../components/Converter";
 
 const faqs = [
@@ -99,9 +98,7 @@ export function HomePage() {
           <p>Nenhum upload para nossos servidores. O arquivo permanece no seu dispositivo.</p>
         </div>
         <div className="tool-layout page-shell-wide">
-          <AdSlot placement="left" />
           <Converter />
-          <AdSlot placement="right" />
         </div>
         <div className="page-shell converter-assurances">
           <span><ShieldCheck size={18} /> Processamento local</span>
@@ -139,8 +136,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
-      <div className="page-shell"><AdSlot placement="inline" /></div>
 
       <section id="seguranca" className="section privacy-section">
         <div className="page-shell privacy-grid">
