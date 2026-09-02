@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Logo() {
   return (
-    <Link className="brand" to="/" aria-label="Converge PDF — página inicial">
+    <Link className="brand" to="/" aria-label="Texto Doc — página inicial">
       <span className="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 40 40" role="img">
           <path d="M10.5 6.5h12.8l6.2 6.2v20.8h-19z" className="brand-paper" />
