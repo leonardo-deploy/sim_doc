@@ -1,6 +1,6 @@
 {
-  "name": "Texto Doc",
-  "short_name": "Texto Doc",
+  "name": "Sim Doc",
+  "short_name": "Sim Doc",
   "description": "Converta PDFs e fotos de documentos em arquivos Word editáveis.",
   "start_url": "/",
   "display": "standalone",
