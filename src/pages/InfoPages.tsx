@@ -32,9 +32,10 @@ export function AboutPage() {
     >
       <h2>O que fazemos</h2>
       <p>
-        O Sim Doc transforma textos de arquivos PDF e fotos de documentos em um arquivo
-        Word editável. A ferramenta combina leitura de PDF e reconhecimento óptico de caracteres
-        (OCR) em uma experiência direta, acessível no computador ou no celular.
+        O Sim Doc transforma arquivos PDF e fotos de documentos em um Word editável,
+        preservando páginas, posições, imagens, linhas e espaçamentos sempre que possível.
+        A ferramenta combina leitura de PDF e reconhecimento óptico de caracteres (OCR) em uma
+        experiência direta, acessível no computador ou no celular.
       </p>
       <h2>Nosso princípio</h2>
       <p>
@@ -102,8 +103,9 @@ export function TermsPage() {
       <p className="prose-updated">Última atualização: 25 de agosto de 2026.</p>
       <h2>1. Finalidade do serviço</h2>
       <p>
-        O Sim Doc oferece ferramentas automatizadas para extrair texto de PDFs e imagens e
-        gerar documentos editáveis. O serviço não substitui uma revisão humana.
+        O Sim Doc oferece ferramentas automatizadas para converter PDFs e imagens em documentos
+        editáveis, buscando preservar a estrutura visual original. O serviço não substitui uma
+        revisão humana.
       </p>
       <h2>2. Precisão da conversão</h2>
       <p>
@@ -157,7 +159,7 @@ export function ContactPage() {
             <Mail size={24} /><span><strong>E-mail</strong><small>{contactEmail}</small></span>
           </a>
         )}
-        <a href="https://github.com/leonardo-deploy/texto_doc/issues" target="_blank" rel="noreferrer">
+        <a href="https://github.com/leonardo-deploy/sim_doc/issues" target="_blank" rel="noreferrer">
           <Code2 size={24} /><span><strong>Relatar problema no GitHub</strong><small>Abra uma issue pública no repositório</small></span>
         </a>
       </div>

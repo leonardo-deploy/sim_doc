@@ -11,6 +11,9 @@ O Sim Doc foi projetado para funcionar no **Cloudflare Pages no plano gratuito**
 - PDF com texto selecionável para Word
 - OCR automático para páginas digitalizadas
 - Fotos JPG, PNG, WebP, BMP e TIFF para Word
+- Preservação do tamanho e da orientação de cada página
+- Textos editáveis reconstruídos nas posições do documento original
+- Imagens, linhas, fundos e outros elementos visuais mantidos no DOCX
 - Português, inglês e espanhol
 - Revisão e edição do texto antes do download
 - Até 40 páginas por PDF ou 10 imagens por conversão
@@ -56,7 +59,7 @@ A opção recomendada é conectar o próprio repositório ao Cloudflare para ter
 
 1. Acesse **Workers & Pages** no painel do Cloudflare.
 2. Selecione **Create application → Pages → Import an existing Git repository**.
-3. Autorize o GitHub e escolha `leonardo-deploy/texto_doc`.
+3. Autorize o GitHub e escolha `leonardo-deploy/sim_doc`.
 4. Use a branch de produção `main`.
 5. Configure o comando de build como `npm run build`.
 6. Configure o diretório de saída como `dist`.
@@ -90,8 +93,10 @@ O domínio atual do projeto é `https://sim-doc.pages.dev`. Se um domínio próp
 
 ## Limitações conhecidas
 
-- A conversão prioriza o texto editável, não uma reprodução idêntica da diagramação.
-- Tabelas, múltiplas colunas, assinaturas e textos manuscritos podem exigir revisão.
+- PDF e Word usam estruturas diferentes; documentos muito complexos ainda podem apresentar pequenas diferenças de diagramação.
+- As fontes do PDF precisam existir no dispositivo para serem reproduzidas exatamente; quando não existem, o Word usa uma fonte substituta.
+- Em documentos digitalizados, o sistema reconstrói o texto reconhecido sobre o fundo original, e áreas coloridas podem exigir revisão.
+- Tabelas, múltiplas colunas, assinaturas e textos manuscritos podem exigir pequenos ajustes.
 - OCR depende da nitidez, iluminação e enquadramento da imagem.
 - O primeiro OCR pode demorar um pouco porque o navegador precisa carregar o modelo do idioma.
 - Dispositivos com pouca memória podem ter dificuldade com documentos muito extensos.

@@ -9,7 +9,7 @@ export function Footer() {
         <div className="footer-intro">
           <Logo />
           <p>
-            Converta documentos em texto editável com simplicidade, privacidade e sem
+            Converta documentos para Word editável preservando o layout, com privacidade e sem
             instalar programas.
           </p>
         </div>
@@ -17,7 +17,7 @@ export function Footer() {
           <h2>Sim Doc</h2>
           <Link to="/sobre">Sobre o projeto</Link>
           <Link to="/#como-funciona">Como funciona</Link>
-          <a href="https://github.com/leonardo-deploy/texto_doc" target="_blank" rel="noreferrer">
+          <a href="https://github.com/leonardo-deploy/sim_doc" target="_blank" rel="noreferrer">
             <Code2 size={15} /> GitHub
           </a>
         </div>

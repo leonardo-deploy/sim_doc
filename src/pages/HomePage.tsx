@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "O resultado fica igual ao documento original?",
     answer:
-      "O objetivo é recuperar o texto e organizá-lo em um Word editável. Elementos complexos, como tabelas, colunas, assinaturas e diagramações especiais, podem exigir ajustes manuais.",
+      "O Sim Doc preserva o tamanho das páginas, as posições do texto, as imagens, as linhas e outros elementos visuais. Como PDF e Word usam estruturas diferentes, documentos muito complexos ou digitalizados ainda podem exigir pequenos ajustes.",
   },
   {
     question: "Funciona com PDF digitalizado?",
@@ -56,8 +56,8 @@ export function HomePage() {
               Transforme PDFs e fotos em <span>documentos editáveis</span>
             </h1>
             <p>
-              Extraia textos de documentos e baixe tudo em Word, sem instalar programas e
-              sem enviar seus arquivos para a nuvem.
+              Converta documentos para Word mantendo a diagramação, as imagens e o texto
+              editável, sem instalar programas ou enviar seus arquivos para a nuvem.
             </p>
             <a className="button button-primary hero-button" href="#converter">
               Converter meu documento <MousePointerClick size={19} />
@@ -125,13 +125,13 @@ export function HomePage() {
               <span className="step-number">02</span>
               <div className="step-icon"><ScanText size={25} /></div>
               <h3>Revise o texto</h3>
-              <p>O conteúdo é reconhecido no navegador e fica disponível para correções.</p>
+              <p>O conteúdo e sua posição são reconhecidos no navegador e ficam disponíveis para correções.</p>
             </article>
             <article className="step-card">
               <span className="step-number">03</span>
               <div className="step-icon"><Download size={25} /></div>
               <h3>Baixe em Word</h3>
-              <p>Gere um arquivo DOCX editável, pronto para continuar o seu trabalho.</p>
+              <p>Gere um DOCX editável com páginas, imagens, linhas e espaçamentos preservados.</p>
             </article>
           </div>
         </div>
@@ -168,8 +168,8 @@ export function HomePage() {
             <span className="section-kicker">FEITO PARA O DIA A DIA</span>
             <h2>Documentos editáveis sem complicação</h2>
             <p>
-              Recupere textos de contratos, declarações, anotações, formulários, apostilas e
-              outros materiais. Revise o reconhecimento e continue trabalhando no Word.
+              Converta contratos, declarações, formulários, apostilas e outros materiais sem
+              perder a organização visual. Revise o reconhecimento e continue trabalhando no Word.
             </p>
             <div className="format-pills">
               <span><FileText size={17} /> PDF</span>

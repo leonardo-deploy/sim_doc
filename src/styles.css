@@ -962,6 +962,15 @@ p {
   outline: 3px solid rgba(249, 115, 22, 0.11);
 }
 
+.editor-help {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+}
+
 .result-actions {
   display: flex;
   justify-content: flex-end;
