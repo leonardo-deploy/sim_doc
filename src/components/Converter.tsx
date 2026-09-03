@@ -117,7 +117,7 @@ export function Converter() {
     setDownloading(true);
     setError(null);
     try {
-      await downloadAsWord(result.sourceName, editableText);
+      await downloadAsWord(result.sourceName, editableText, result.layout);
     } catch {
       setError("Não foi possível gerar o Word. Tente novamente.");
     } finally {
@@ -245,11 +245,16 @@ export function Converter() {
           <span className="eyebrow eyebrow-success">Conversão concluída</span>
           <h2>Seu documento está pronto</h2>
           <p>
-            Encontramos texto em {result.pages} {result.pages === 1 ? "página" : "páginas"}
-            {result.usedOcr ? " usando reconhecimento óptico" : ""}. Revise e edite se desejar.
+            Preservamos o tamanho, as posições e os elementos visuais de {result.pages}{" "}
+            {result.pages === 1 ? "página" : "páginas"}
+            {result.usedOcr ? " usando reconhecimento óptico quando necessário" : ""}.
           </p>
-          <label className="editor-label" htmlFor="result-text"><PencilLine size={17} /> Texto extraído</label>
+          <label className="editor-label" htmlFor="result-text"><PencilLine size={17} /> Texto editável</label>
           <textarea id="result-text" value={editableText} onChange={(event) => setEditableText(event.target.value)} spellCheck="true" />
+          <small className="editor-help">
+            Você pode corrigir o texto antes de baixar. Para manter as posições com maior precisão,
+            evite adicionar ou remover linhas inteiras; no Word, todo o texto continuará editável.
+          </small>
           <div className="result-actions">
             <button className="button button-ghost" type="button" onClick={reset}><RotateCcw size={18} /> Nova conversão</button>
             <button className="button button-primary" type="button" disabled={downloading || !editableText.trim()} onClick={download}>
